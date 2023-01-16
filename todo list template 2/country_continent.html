@@ -1,0 +1,73 @@
+<!-- Create an country_continent.html file. With a select field (having country options) and a button You must fill in valid id and other attributes for elements to make the buttons work.
+
+Within the select you must have the following options, the options must also have the same value as given below:
+
+India
+United States of America
+China
+Nepal
+Australia
+France
+Germany
+South Africa
+Nigeria
+Mexico
+Argentina
+Brazil
+Canada
+Singapore
+Sweden
+eg:
+
+<select id = "continent_select">
+	<option value = "India"> India </option>	
+</select>
+Now using Javascript do the following:
+
+When the button Find continent is clicked, you must output an alert on the page which contains the text The continent is <name of continent>
+Eg: If the input is India -> The continent is Asia
+If the input is Argentina -> The continent is South America
+This link https://simple.wikipedia.org/wiki/List_of_countries_by_continents (Links to an external site.) shows you the continents for each country if you are unsure.
+
+Hint: Use a Switch statement!
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <DIV>
+         <select name="" id="myselect">
+             <option value="The continent is Asia">India</option>
+             <option value="">United States of America</option>
+             <option value="continent">China</option>
+             <option value="Asia">Nepal</option>
+             <option value="">Australia</option>
+             <option value="The eastern mainland states">France</option>
+             <option value=" Europe">Germany</option>
+             <option value="The African continent,">South Africa</option>
+             <option value=" Africa">Nigeria</option>
+             <option value="The Western Hemisphere">Mexico</option>
+             <option value="The continent is South America">Argentina</option>
+             <option value="South America">Brazil</option>
+             <option value="North America">Canada</option>
+             <option value="Southeast Asia">Singapore</option>
+             <option value="Northern Europe">Sweden</option>
+         </select>
+
+     </DIV>
+     <br>
+     <button onclick="showoption()">alert</button>
+ </body>
+ </html>
+ <script>
+     function showoption(){
+         alert(document.getElementById("myselect").value);
+     }
+ </script>
